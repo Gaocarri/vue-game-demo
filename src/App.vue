@@ -48,7 +48,7 @@ export default {
       this.tell();
     },
     tell() {
-      for (let i = 0; i < 2; i++) {
+      for (let i = 0; i <= 2; i++) {
         if (
           this.map[i][0] !== null &&
           this.map[i][0] === this.map[i][1] &&
@@ -58,7 +58,7 @@ export default {
           this.finished = true;
         }
       }
-      for (let j = 0; j < 2; j++) {
+      for (let j = 0; j <= 2; j++) {
         if (
           this.map[0][j] !== null &&
           this.map[0][j] === this.map[1][j] &&
